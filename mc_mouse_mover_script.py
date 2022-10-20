@@ -5,7 +5,7 @@ while True:
     if keyboard.is_pressed("z"):
         c=1
     if keyboard.is_pressed("x"):
-        stop()
+        c = 0
     while c == 1:
         pyautogui.moveTo(1000, 600,duration=2)
         pyautogui.moveTo(1100, 605,duration=2)
