@@ -1,11 +1,11 @@
-import mouse 
+import pyautogui
 import keyboard
-import time
-
-time.sleep(5)
-
+c=0
 while True:
-    mouse.move(100,5, absolute=False, duration=0.5)
-    mouse.move(-100,-5, absolute=False, duration=0.5)
-##(707, 669)
-##(1095, 750)
+    if keyboard.is_pressed("z"):
+        c=1
+    if keyboard.is_pressed("x"):
+        stop()
+    while c == 1:
+        pyautogui.moveTo(1000, 600,duration=2)
+        pyautogui.moveTo(1100, 605,duration=2)
